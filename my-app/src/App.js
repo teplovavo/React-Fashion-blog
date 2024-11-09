@@ -1,9 +1,10 @@
-
 import React from "react";
-import Header from "./Header";
-import Article from "./Article";
-import Footer from "./Footer";
+import Header from "./components/Header";
+import Article from "./components/Article";
+import Footer from "./components/Footer";
 import "./App.css";
+import blogImage1 from "./components/blog-image-1.jpg";
+import blogImage2 from "./components/blog-image-2.jpg";
 
 function App() {
   return (
@@ -12,13 +13,13 @@ function App() {
       <main>
         <Article
           title="On the Street in Brooklyn"
-          imgSrc="./blog-image-1"
+          imgSrc={blogImage1} // Используем импортированное изображение
           imgAlt="Description of image 1"
           content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec nulla ut libero mollis facilisis."
         />
         <Article
           title="Vintage in Vogue"
-          imgSrc="./blog-image-2"
+          imgSrc={blogImage2} // Используем импортированное изображение
           imgAlt="Description of image 2"
           content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec nulla ut libero mollis facilisis."
         />
