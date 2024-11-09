@@ -1,0 +1,72 @@
+/* General Page Styling */
+html {
+    border-left: 5px solid lightgray;
+}
+
+body {
+    min-height: 100vh;
+    font-family: sans-serif;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Section Padding Fix */
+header, main, footer {
+    padding: 1rem 2rem;
+}
+
+/* Header Styles */
+h1 {
+    color: tomato;
+}
+
+/* Image Styling */
+img {
+    width: 100%;
+}
+
+/* Navigation Styling */
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav[aria-label="Main Navigation"] a {
+    color: lightgray;
+}
+
+nav[aria-label="Footer Navigation"] a {
+    color: tomato;
+}
+
+/* Blog Post Styles */
+article {
+    margin-bottom: 4rem;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 2rem;
+}
+
+article h2 {
+    font-size: 1.5rem; /* Larger title for blog posts */
+}
+
+article p::first-letter {
+    color: lightgray;
+    font-size: 2rem; /* Optional: Increase size for drop cap effect */
+    font-weight: bold;
+}
+
+/* "Continues..." Link Styling */
+article a {
+    color: tomato;
+    font-weight: bold;
+    text-align: right;
+    display: inline-block; /* Aligns link to the right */
+}
+
+/* Footer Styling */
+footer p {
+    color: lightgray;
+}
